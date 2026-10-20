@@ -10,4 +10,4 @@
 | `log_call` | Writes the after-call summary to the Call Log tab |
 | `ping` | Connection test |
 
-Setup, the four webhook definitions and a sample agent prompt are in the guide on the Telzino docs site: **Agent Examples > Google Sheets CRM Receptionist**.
+Setup, the four webhook definitions and a sample agent prompt are in the guide on the Telzino docs site: [Receptionist Agent Using Google Sheets as Simple CRM](https://docs.telzino.com/examples/google-sheets-crm-receptionist).

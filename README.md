@@ -4,7 +4,8 @@ Public example scripts for [Telzino](https://telzino.com) voice agents. Each fol
 
 | Folder | What it is | Guide |
 | :- | :- | :- |
-| [`google-sheet-crm`](google-sheet-crm) | Google Apps Script that lets a receptionist agent look up callers, reschedule appointments, open tickets and log calls in a Google Sheet | Receptionist Agent Using Google Sheets as Simple CRM |
+| [`appointment-confirmation`](appointment-confirmation) | Google Apps Script that calls customers from a Google Sheet to confirm appointments and writes each call's result back to the row | [Appointment Confirmation](https://docs.telzino.com/examples/appointment-confirmation) |
+| [`google-sheet-crm`](google-sheet-crm) | Google Apps Script that lets a receptionist agent look up callers, reschedule appointments, open tickets and log calls in a Google Sheet | [Receptionist Agent Using Google Sheets as Simple CRM](https://docs.telzino.com/examples/google-sheets-crm-receptionist) |
 
 ## Using a script
 
