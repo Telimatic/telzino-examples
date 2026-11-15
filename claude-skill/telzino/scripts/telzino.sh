@@ -27,13 +27,13 @@
 #   export TELZINO_CLIENT_SECRET=...
 #
 # Environment:
-#   TELZINO_BASE_URL   API base URL (default: https://beta.telzino.io)
+#   TELZINO_BASE_URL   API base URL (default: https://api.telzino.com)
 #
 # Requires: bash, curl, jq.
 
 set -uo pipefail
 
-BASE_URL="${TELZINO_BASE_URL:-https://beta.telzino.io}"
+BASE_URL="${TELZINO_BASE_URL:-https://api.telzino.com}"
 API="$BASE_URL/api/v1"
 CMD="${1:-}"; [ $# -gt 0 ] && shift
 

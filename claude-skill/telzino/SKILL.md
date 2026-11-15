@@ -55,7 +55,7 @@ Rules:
 - **Don't ask the user to paste the secret into the chat.** On a computer, they create `~/.telzino.env` in an editor and run `chmod 600 ~/.telzino.env`. In a Claude chat with no access to their computer, ask them to attach the file. Then set `TELZINO_ENV_FILE` to the attached file's path for each command, and don't copy it anywhere else.
 - If a secret does end up in the chat, say so plainly and recommend rotating it.
 
-`TELZINO_BASE_URL` changes the API host (default `https://beta.telzino.io`). If requests fail with a proxy or network error, the environment probably can't reach that host. Tell the user that the host has to be allowed for Claude's code execution. Don't retry it other ways.
+`TELZINO_BASE_URL` changes the API host (default `https://api.telzino.com`). If requests fail with a proxy or network error, the environment probably can't reach that host. Tell the user that the host has to be allowed for Claude's code execution. Don't retry it other ways.
 
 ## Commands
 
@@ -108,7 +108,7 @@ Calls on a live agent are real callers. If a recent change is breaking calls, pu
 
 ## Changing an agent safely
 
-`GET /api/v1/agents/{id}` returns the full agent. Changes go through `PUT /api/v1/agents/{id}`. On `beta.telzino.io`, API routes are served under `/api/v1/...`.
+`GET /api/v1/agents/{id}` returns the full agent. Changes go through `PUT /api/v1/agents/{id}`. On `api.telzino.com`, API routes are served under `/api/v1/...`.
 
 1. **Back up right before each change.** Run `agent <agent-id>`, which saves the full JSON. Someone may have edited the agent in the dashboard since you last read it. If the field you're about to change differs from what you planned against, stop and tell the user.
 2. **Send only the fields you're changing, in camelCase.** A GET returns snake_case (`system_prompt`), but a PUT takes camelCase (`systemPrompt`). The PUT rejects unknown keys, so never send a GET response back as a PUT.
